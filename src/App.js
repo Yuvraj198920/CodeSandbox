@@ -3,7 +3,6 @@ export default function App() {
     const res = await fetch("https://api.adviceslip.com/advice");
     const data = await res.json();
     console.log(data);
-    console.log("first check in");
   }
   return (
     <div>
