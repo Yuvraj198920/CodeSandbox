@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Spinner from "./coomponents/Spinner";
+import "./app.css";
 
 export default function App() {
   const [data, setData] = useState("");
@@ -10,9 +12,10 @@ export default function App() {
     setData(data.slip.advice);
   }
   return (
-    <div>
+    <div className="">
+      <Spinner />
       <h1>Hello World</h1>
-      <p>{data}</p>
+      <h2>{data}</h2>
       <button onClick={getAdvice}>Get Advice</button>
     </div>
   );
